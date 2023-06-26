@@ -11,7 +11,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 550;
   position: sticky;
   top: 0;
   z-index: 999;
@@ -54,7 +55,7 @@
 }
 
 .navbar__links {
-  color: #141414;
+  color: rgb(230, 2, 2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,6 +66,7 @@
 
 .navbar__links:hover {
   color: red;
+  text-decoration: underline 3px;
   transition: all 0.3s ease;
 }
 
