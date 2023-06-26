@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="icon" type="image/png" href="/images/flona_favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eb9a0b4ec9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><img src="/Images/flona_logo.png" alt="Flona company"
+        /></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links">About Us</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#products" class="navbar__links">Products</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <div class="main">
+      <div class="main__card">
+        <div class="main__container">
+          <div class="main__content">
+            <h4>PREMIUM QUALITY</h4>
+            <h1>
+              HOUSEHOLD <br />
+              CLEANING PRODUCTS
+            </h1>
+            <button href="/products.html" class="main__button">
+              DISCOVER NOW
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- products -->
+
+    <div class="products" id="products">
+      <div class="products__container">
+        <div class="products__content">
+          <h1>OUR PRODUCTS</h1>
+          <div class="products__card">
+            <h2>Flona Original</h2>
+            <h4>Dishwashing Soap</h4>
+            <h5>
+              New Flona Original contains 2X grease cleaning power <br />
+              so you can get through more dishes with 50% less scrubbing.
+            </h5>
+            <button href="/products.html" class="products__button">
+              DISCOVER NOW
+            </button>
+          </div>
+          <div class="carousel__button">
+            <button id="prevBtn">&larr;</button>
+            <button id="nextBtn">&rarr;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
