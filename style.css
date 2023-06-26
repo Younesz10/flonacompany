@@ -280,7 +280,7 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
-  margin-top: 20dpx;
+  margin-top: 20px;
 }
 
 .products__button:hover {
