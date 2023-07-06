@@ -237,20 +237,22 @@
 @media screen and (max-width: 765px) {
   .main__container {
     display: grid;
+    background-size: 180%;
+    background-position: center;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 23vh;
+    height: 46vh;
   }
 
   .main__content h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .main__content h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .main__content {
@@ -258,6 +260,7 @@
     justify-content: center;
     margin: auto;
     margin-right: 90px;
+    margin-top: 200px;
   }
 
   .main__button {
@@ -379,7 +382,7 @@
 
 @media screen and (max-width: 765px) {
   .products__container {
-    display: flex;
+    display: grid;
     flex-direction: row;
     background-image: url(/images/flona_dishsoap_mobile.jpg);
     background-size: 100%;
@@ -393,7 +396,6 @@
     margin: 0 auto;
     width: 100%;
     max-width: 1150px;
-    margin-bottom: 2rem;
     height: 60vh;
     z-index: 1;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -408,33 +410,29 @@
   .products h1 {
     color: white;
     background-size: 100%;
-    margin-top: 20px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 
   .products__card h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: white;
-    position: relative;
     background-size: 100%;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 
   .products__card h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: #fff;
     background-size: 100%;
-    position: relative;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   .products__card h5 {
     margin-top: 5px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #fff;
     background-size: 100%;
-    position: relative;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
 
@@ -442,7 +440,10 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 20px;
+  }
+
+  .products__content {
   }
 
   .products__button {
