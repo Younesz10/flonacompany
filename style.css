@@ -533,8 +533,9 @@
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
     width: 100%;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
     height: 72vh;
+    margin-bottom: 100px;
   }
 
   .flona_card {
@@ -546,7 +547,7 @@
     color: #0066cc;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     margin-left: 30px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .flona_card h1 {
@@ -562,7 +563,6 @@
   .flona_content {
     display: grid;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
 
   .flona_content img {
