@@ -448,7 +448,7 @@
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-left: 20px;
+    margin-left: 23px;
   }
 
   .products__content {
@@ -458,7 +458,7 @@
   .products__button {
     font-size: 0.8rem;
     width: 170px;
-    background-image: linear-gradient(to top, #ffffff 0%, #ffffff 100%);
+    background-image: linear-gradient(to top, #ededed 0%, #ffffff 100%);
     padding: 16px 30px;
     border: none;
     border-radius: 25px;
@@ -503,6 +503,7 @@
   margin-left: 80px;
   color: #0066cc;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  margin-top: 50px;
 }
 
 .flona_card h1 {
@@ -521,9 +522,8 @@
 }
 
 .flona_content img {
-  width: 580px;
+  width: 300px;
   height: 380px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 765px) {
@@ -540,36 +540,38 @@
   }
 
   .flona_card {
-    margin-top: 40px;
-    margin-bottom: 100px;
     display: grid;
     align-content: center;
     align-items: center;
+    justify-content: center;
     margin-left: auto;
     color: #0066cc;
     text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
     margin-left: 30px;
+    margin-top: 50px;
   }
 
   .flona_card h1 {
     font-size: 40px;
+    margin-left: 20px;
   }
 
   .flona_card li {
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 50px;
   }
 
   .flona_content {
     display: grid;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .flona_content img {
-    width: 100%;
     position: relative;
-    height: 280px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 280px;
+    height: 360px;
+    margin-left: 50px;
   }
 }
 
