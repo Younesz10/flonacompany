@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/bootstrap.bundle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/eb9a0b4ec9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- navbar section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo"
+          ><img src="images/flonalogo.png" alt="Flona company"
+        /></a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links">ABOUT US</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/products.html" class="navbar__links">PRODUCTS</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/contact.html" class="navbar__links">CONTACT</a>
+          </li>
+          <li class="call-button">
+            <a href="tel:+9647503181817">CALL NOW</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="contact">
+      <div class="contact__container">
+        <h1>Contact Us</h1>
+        <div class="contact__form">
+          <div class="contact_info">
+            <h2>Main Office</h2>
+            <div class="phone">
+              <p><b>Telephone</b></p>
+              <p>111-111-1111</p>
+              <p>111-111-1111</p>
+              <p>111-111-1111</p>
+            </div>
+            <div class="email">
+              <p><b>Email</b></p>
+              <p>flona.com@hotmail.com</p>
+            </div>
+          </div>
+          <form action="/submit_contact_form" method="post">
+            <div class="name__container">
+              <label for="firstName">First Name:</label>
+              <input type="text" id="firstName" name="firstName" required />
+
+              <label for="lastName">Last Name:</label>
+              <input type="text" id="lastName" name="lastName" required />
+            </div>
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <br />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <p>
+          The contact form is currently being worked on and is not yet
+          functional. In the meantime, please feel free to contact us via phone
+          or email.
+        </p>
+        <br />
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+
+  <footer>
+    <div class="socials">
+      <div class="socials_container">
+        <p>FOLLOW US</p>
+        <div class="socials_content">
+          <a
+            href="https://www.facebook.com/flonaoffice/"
+            alt="Flona Facebook"
+            target="_blank"
+            ><img src="/images/facebook_icon.png" alt="facebook"
+          /></a>
+          <a
+            href="https://www.instagram.com/flona_clean_cosmatic/"
+            alt="Flona instagram"
+            target="_blank"
+            ><img src="/images/instagram_icon.png" alt="instagram"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <p>&copy; 2023 Flona Company. All rights reserved.</p>
+  </footer>
+</html>
