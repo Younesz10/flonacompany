@@ -173,7 +173,8 @@
   }
 
   .call-button {
-    display: none;
+    margin: auto;
+    width: 150px;
   }
 }
 
