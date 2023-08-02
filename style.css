@@ -76,6 +76,7 @@
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .call-button a {
@@ -234,7 +235,7 @@
 .main__button {
   font-size: 1rem;
   background-image: linear-gradient(to top, #1085fa 0%, #0066cc 100%);
-  padding: 14px 32px;
+  padding: 14px 20px;
   border: none;
   border-radius: 25px;
   color: #fff;
@@ -737,5 +738,3 @@ footer {
     margin-top: 20px;
   }
 }
-
-s
