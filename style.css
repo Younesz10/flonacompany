@@ -192,9 +192,8 @@
 }
 
 .main__container {
-  background: url(/gifs/flona_gif.gif);
   background-position: center;
-  background-size: 100%;
+  background-size: cover; /* Change to "cover" */
   background-repeat: no-repeat;
   display: flex;
   align-items: center;
@@ -206,6 +205,16 @@
   margin: 0 auto;
   z-index: 1;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.main__container video {
+  width: 100%; /* Change to 100% */
+  height: auto;
+}
+
+.back_video {
+  position: absolute;
+  z-index: -1;
 }
 
 .main__content h4 {
@@ -264,14 +273,20 @@
 @media screen and (max-width: 765px) {
   .main__container {
     display: grid;
-    background-size: 180%;
+    background-size: cover;
     background-position: center;
     grid-template-columns: auto;
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
-    height: 46vh;
+    height: 50vh; /* Adjust the height for mobile */
+  }
+
+  .main__container video {
+    max-width: 100%; /* Adjust the max-width for mobile */
+    height: 100%;
+    object-fit: cover;
   }
 
   .main__content h1 {
