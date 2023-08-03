@@ -39,10 +39,6 @@
   margin: 20px;
 }
 
-.fa-gem {
-  margin-right: 0.5rem;
-}
-
 .navbar__menu {
   display: flex;
   align-items: center;
@@ -70,17 +66,23 @@
 }
 
 .call-button {
-  width: 100px;
+  width: 115px;
   background-image: linear-gradient(to top, #1085fa 0%, #0066cc 100%);
   color: white;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 15px;
   cursor: pointer;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 0.85rem;
 }
 
 .call-button a {
   color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.call-button a:hover {
+  color: greenyellow;
   text-decoration: none;
   cursor: pointer;
 }
@@ -175,7 +177,8 @@
 
   .call-button {
     margin: auto;
-    width: 150px;
+    width: 120px;
+    font-size: 0.9rem;
     height: auto;
     margin-bottom: 20px;
   }
