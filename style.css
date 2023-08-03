@@ -611,6 +611,7 @@
 }
 
 footer {
+  margin-top: 100%;
   padding: 20px;
   background-color: #0066cc;
   color: white;
@@ -752,4 +753,13 @@ footer {
     margin-bottom: 0;
     margin-top: 20px;
   }
+}
+
+#preloader {
+  background: white url(gifs/preloader.gif) no-repeat center center;
+  background-size: 50%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
 }
