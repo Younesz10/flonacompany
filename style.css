@@ -196,6 +196,7 @@
 
 .main__container {
   background-position: center;
+  background-image: linear-gradient(to top, #abd4fd 0%, #0066cc 100%);
   background-size: cover; /* Change to "cover" */
   background-repeat: no-repeat;
   display: flex;
