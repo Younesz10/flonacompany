@@ -72,7 +72,7 @@
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   font-size: 0.85rem;
 }
 
@@ -93,7 +93,7 @@
   padding: 10px;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   font-size: 0.85rem;
   list-style: none;
   display: none;
