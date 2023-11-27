@@ -392,12 +392,11 @@
   color: #fff;
   font-size: 1.5rem;
   font-family: "Kumbh Sans", sans-serif;
-  display: flex;
   grid-template-columns: 1fr 1fr;
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  height: 90vh;
+  height: 100vh;
   z-index: 1;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
@@ -661,6 +660,7 @@ footer {
   align-content: center;
   justify-content: center;
   font-family: "Kumbh Sans", sans-serif;
+  min-height: 100vh;
 }
 
 .contact__form {
@@ -685,7 +685,7 @@ footer {
   margin-top: 20px;
   margin-bottom: 20px;
 
-  background-color: white;
+  background-color: rgb(242, 242, 242);
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -772,4 +772,8 @@ footer {
     background-size: 120%;
     z-index: 1000;
   }
+}
+
+.our_products {
+  min-height: 90vh;
 }
