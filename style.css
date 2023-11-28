@@ -690,7 +690,7 @@ footer {
 .contact__container {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-image: linear-gradient(to top, #dddddd 0%, #ffffff 100%);
   background-size: cover;
   align-items: center;
   align-content: center;
@@ -706,13 +706,6 @@ footer {
   align-content: center;
   justify-content: space-between;
   padding: auto;
-}
-.contact__container h1 {
-  text-align: center;
-  font-size: 3rem;
-  color: #0066cc;
-  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-  margin-top: -200px;
 }
 
 .contact__form form {
@@ -751,6 +744,44 @@ footer {
   color: white;
 }
 
+.contact_info {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background-image: linear-gradient(to top, #cecece 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.3);
+}
+.contact_info h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #ffffff;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to top, #409bf6 0%, #0076ed 100%);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: -25px;
+}
+.contact_info h2 {
+  color: #0055aa;
+  margin-top: 50px;
+  text-align: center;
+}
+.contact_info h3 {
+  color: #0055aa;
+  margin-top: 40px;
+}
+
+.contact_info p {
+  margin-top: 20px;
+}
+
+.contact_info span {
+  margin-top: -100px;
+}
+
 @media screen and (max-width: 960px) {
   .contact__form {
     display: flex;
@@ -787,9 +818,16 @@ footer {
   }
 
   .contact__container p {
-    margin: 35px;
-    margin-bottom: 0;
-    margin-top: 20px;
+  }
+
+  .contact_info {
+    margin-top: -200px;
+  }
+  .contact_info p {
+  }
+
+  .phone {
+    display: block;
   }
 }
 
