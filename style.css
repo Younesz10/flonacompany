@@ -317,7 +317,8 @@ p {
   outline: none;
 }
 
-.main__button a {
+.main__button,
+.main__content a {
   position: relative;
   z-index: 2;
   color: #fff;
@@ -471,6 +472,9 @@ p {
   justify-content: space-between;
   align-items: center;
   justify-content: center;
+}
+.products__content a {
+  text-decoration: none;
 }
 .products__content img {
   width: 380px;
