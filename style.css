@@ -11,6 +11,7 @@
   color: #ffffff; /* Set text color */
   padding: 10px 20px; /* Add padding to the announcement bar */
   text-align: center; /* Center align text */
+  position: sticky;
 }
 
 .announcement-bar a {
@@ -116,6 +117,7 @@
   font-size: 0.85rem;
   display: none;
   text-decoration: none;
+  list-style: none;
 }
 
 .call-button2:hover {
