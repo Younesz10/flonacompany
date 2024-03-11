@@ -12,9 +12,11 @@
   padding: 10px 20px; /* Add padding to the announcement bar */
   text-align: center; /* Center align text */
   position: sticky;
+  top: 0;
 }
 
-.announcement-bar a {
+.announcement-bar a,
+p {
   color: white;
 }
 
@@ -27,7 +29,7 @@
   font-size: 0.9rem;
   font-weight: 550;
   position: sticky;
-  top: 0;
+  top: 40px;
   z-index: 999;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
