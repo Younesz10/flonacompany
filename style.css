@@ -5,6 +5,18 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+/* Style for the announcement bar */
+.announcement-bar {
+  background-color: red;
+  color: #ffffff; /* Set text color */
+  padding: 10px 20px; /* Add padding to the announcement bar */
+  text-align: center; /* Center align text */
+}
+
+.announcement-bar a {
+  color: white;
+}
+
 .navbar {
   background-color: white;
   height: 70px;
@@ -102,8 +114,8 @@
   cursor: pointer;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   font-size: 0.85rem;
-  list-style: none;
   display: none;
+  text-decoration: none;
 }
 
 .call-button2:hover {
@@ -902,7 +914,7 @@ footer {
   width: 300px;
   height: 300px;
   margin-bottom: 50px;
-  border-radius: 25px;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 960px) {
@@ -913,7 +925,7 @@ footer {
     gap: 0; /* Set the gap between grid items to zero */
   }
   .our_products_card img {
-    width: 100%; /* Ensure images fill their parent container */
+    width: 120%; /* Ensure images fill their parent container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 25px;
     align-items: center;
