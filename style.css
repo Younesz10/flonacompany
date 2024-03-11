@@ -12,6 +12,8 @@
   padding: 10px 20px; /* Add padding to the announcement bar */
   text-align: center; /* Center align text */
   position: sticky;
+  z-index: 999;
+
   top: 0;
 }
 
@@ -921,7 +923,7 @@ footer {
     gap: 0; /* Set the gap between grid items to zero */
   }
   .our_products_card img {
-    width: 120%; /* Ensure images fill their parent container */
+    width: 100%; /* Ensure images fill their parent container */
     height: auto; /* Maintain aspect ratio */
     border-radius: 25px;
     align-items: center;
