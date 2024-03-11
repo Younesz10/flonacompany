@@ -883,4 +883,39 @@ footer {
 
 .our_products {
   min-height: 90vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.our_products h1 {
+  font-size: 45px;
+}
+
+.our_products_card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Creates 4 equal-width columns */
+  gap: 20px; /* Adds a gap between each product */
+  margin-top: 50px;
+}
+.our_products_card img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+  border-radius: 25px;
+}
+
+@media screen and (max-width: 960px) {
+  .our_products_card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 4 equal-width columns */
+    margin-top: 50px;
+    gap: 0; /* Set the gap between grid items to zero */
+  }
+  .our_products_card img {
+    width: 100%; /* Ensure images fill their parent container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 25px;
+    align-items: center;
+  }
 }
