@@ -135,9 +135,6 @@
   cursor: pointer;
 }
 @media screen and (max-width: 960px) {
-  .navbar {
-  }
-
   #navbar__logo {
     display: flex;
     cursor: pointer;
@@ -858,9 +855,6 @@ footer {
     font-size: 2.8rem;
   }
 
-  .contact__container p {
-  }
-
   .contact_info {
     padding: 50px;
   }
@@ -868,8 +862,6 @@ footer {
   .contact_info h1 {
     margin: -50px;
     margin-top: -85px;
-  }
-  .contact_info p {
   }
 
   .phone {
