@@ -296,7 +296,7 @@ p {
 }
 
 .main__card {
-  margin: 75px;
+  margin: 50px;
 }
 
 .main__button {
@@ -367,12 +367,11 @@ p {
   }
 
   .image-container img {
-    width: 380px;
+    width: 350px;
     height: auto;
     align-content: center;
     align-items: center;
     justify-content: center;
-    margin-left: 10px;
   }
 
   .main__content h1 {
@@ -383,11 +382,9 @@ p {
     font-size: 1.3rem;
   }
   .main__card {
-    display: grid;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    align-content: center;
     margin-left: 23px;
   }
 
@@ -396,8 +393,8 @@ p {
     align-items: center;
     justify-content: center;
     margin: auto;
-    margin-right: 40px;
-    margin-top: 100px;
+    margin-left: 23px;
+    margin-top: 30px;
   }
 
   .main__button {
