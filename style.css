@@ -740,6 +740,7 @@ footer {
   justify-content: center;
   font-family: "Kumbh Sans", sans-serif;
   min-height: 90vh;
+  margin-top: 30px;
 }
 
 .contact__form {
@@ -751,41 +752,6 @@ footer {
   padding: auto;
 }
 
-.contact__form form {
-  margin-left: 100px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: rgb(242, 242, 242);
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  padding: auto;
-}
-
-.contact__form label,
-.contact__form input {
-  display: inline-block;
-  margin-bottom: 5px;
-  padding: 5px;
-}
-
-.contact__form .name__container input {
-  margin-right: 10px;
-}
-
-.contact__form input[type="submit"] {
-  background-color: #0066cc;
-  border-radius: 10px;
-  padding: 10px;
-  border-color: #0066cc;
-  border-width: 1px;
-  font-size: 1rem;
-  align-items: center;
-  color: white;
-}
-
 .contact_info {
   display: grid;
   align-items: center;
@@ -793,97 +759,39 @@ footer {
   align-content: center;
   background-image: linear-gradient(to top, #f0f0f0 0%, #ffffff 100%);
   border-radius: 20px;
-  padding: 40px;
+  padding: 50px;
   box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.3);
 }
 
-.contact_info:hover {
-  border-width: 0.5px;
-  border-color: black;
-  border-style: solid;
-}
-.contact_info h1 {
+.contact__container h1 {
+  margin-bottom: 50px;
   text-align: center;
-  font-size: 2.8rem;
-  color: #ffffff;
+  font-size: 45px;
+  color: red;
   text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3);
-  background-image: linear-gradient(to top, #409bf6 0%, #0076ed 100%);
-  border-top-left-radius: 19px;
-  border-top-right-radius: 19px;
-  margin: -40px;
-  padding: 5px;
-  margin-top: -54px;
 }
 .contact_info h2 {
   color: #0055aa;
-  margin-top: 50px;
-  text-align: center;
-}
-.contact_info h3 {
-  color: #173553;
-  margin-top: 40px;
-  font-size: 1rem;
-  letter-spacing: 2px;
+  text-align: left;
 }
 
 .contact_info p {
-  margin-top: 20px;
   font-size: 1.2rem;
   color: #173553;
 }
 
 .contact_info span {
-  margin-top: -100px;
   font-size: 1.2rem;
   color: #173553;
 }
 
+.email {
+  margin-top: 30px;
+}
+
 @media screen and (max-width: 960px) {
-  .contact__form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-  }
-  .contact__form form {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    border-radius: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    padding: 30px;
-  }
-
-  .contact__form label,
-  .contact__form input {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 5px;
-    padding: 5px;
-  }
-
-  .contact__form input {
-    padding-right: 100px;
-  }
-  .contact__form h1 {
-    background-size: 100%;
-    text-align: center;
-    font-size: 2.8rem;
-  }
-
-  .contact_info {
-    padding: 50px;
-  }
-
-  .contact_info h1 {
-    margin: -50px;
-    margin-top: -85px;
-  }
-
-  .phone {
-    display: block;
+  .contact__container {
+    margin-top: -80px;
   }
 }
 
@@ -954,4 +862,44 @@ footer {
   .product_info {
     font-size: 15px;
   }
+}
+
+/* About Us Page */
+
+.about_container {
+  min-height: 90vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.about_container h1 {
+  color: red;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 50px;
+}
+
+.about_container h2 {
+  color: red;
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+}
+.about_card h2 {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+.about_card p {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 50px;
+  margin: 20px;
 }
