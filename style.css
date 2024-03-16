@@ -291,9 +291,12 @@ p {
 .main__content {
   align-items: center;
   justify-content: center;
-  margin: 30px;
   display: flex;
   flex-direction: row;
+}
+
+.main__card {
+  margin: 75px;
 }
 
 .main__button {
@@ -331,6 +334,10 @@ p {
 .image-container img {
   width: 753px;
   height: auto;
+  margin: 0;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Mobile Responsive */
@@ -362,6 +369,10 @@ p {
   .image-container img {
     width: 380px;
     height: auto;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
   }
 
   .main__content h1 {
