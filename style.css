@@ -698,6 +698,8 @@ footer {
   align-items: center;
   justify-content: center;
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 100%;
 }
 .socials_container {
   display: flex;
@@ -741,8 +743,6 @@ footer {
   font-family: "Kumbh Sans", sans-serif;
   min-height: 90vh;
   margin-top: 30px;
-  width: 100%; /* Set width to 100% of the parent element */
-  max-width: 100%; /* Ensure the container does not exceed the viewport width */
 }
 
 .contact__form {
