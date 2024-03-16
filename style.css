@@ -729,7 +729,9 @@ footer {
 }
 
 .contact {
-  margin-top: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 .contact__container {
   background-color: white;
