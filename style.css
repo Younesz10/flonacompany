@@ -7,8 +7,8 @@
 
 /* Style for the announcement bar */
 .announcement-bar {
-  background-color: red;
-  color: #ffffff; /* Set text color */
+  background-image: linear-gradient(to top, #1085fa 0%, #0066cc 100%);
+  color: #cb9191; /* Set text color */
   padding: 10px 20px; /* Add padding to the announcement bar */
   text-align: center; /* Center align text */
   position: sticky;
@@ -67,7 +67,7 @@ p {
 }
 
 .navbar__links {
-  color: #005dba;
+  color: red;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -925,6 +925,13 @@ footer {
   height: 300px;
   margin-bottom: 50px;
   border-radius: 50px;
+}
+
+.product_info {
+  text-align: center;
+  border-radius: 25px;
+  padding-bottom: 10px;
+  background-color: #f0f0f0;
 }
 
 @media screen and (max-width: 960px) {
