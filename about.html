@@ -70,60 +70,46 @@
       </div>
     </nav>
 
-    <div class="about">
-      <div class="about_container">
-        <h1>About Us</h1>
-        <div class="about_card">
-          <h2>Our story</h2>
-          <p>
-            Established in 2015, Flona is a pioneering force in the household
-            cleaning product industry. With a steadfast commitment to quality
-            and innovation, we have rapidly grown to become a trusted name in
-            Kurdistan, Iraq, and beyond.
-          </p>
-
-          <h2>Our Mission</h2>
-
-          <p>
-            At Flona, we are dedicated to simplifying and enhancing the lives of
-            our customers through superior cleaning solutions. By consistently
-            delivering products of the highest quality, we aim to foster
-            cleanliness, comfort, and well-being in every home we touch.
-          </p>
-          <h2>Our Products</h2>
-          <p>
-            From dishwashing detergents to laundry essentials and an array of
-            cleaning agents, Flona offers a comprehensive range of household
-            cleaning products designed to tackle the toughest messes with ease.
-            Crafted with precision and care, our products are manufactured in
-            Turkey, utilizing cutting-edge technology and the finest ingredients
-            to ensure unparalleled performance and safety.
-          </p>
-          <h2>Our Presence</h2>
-          <p>
-            With our main office located in Zakho and a secondary office in
-            Duhok, both nestled in the heart of Kurdistan, Iraq, Flona proudly
-            serves the local community and beyond. Our commitment to excellence
-            has enabled us to expand our reach, and today, our products can be
-            found in stores across Kurdistan, Iraq, bringing cleanliness and
-            freshness to homes everywhere.
-          </p>
-          <h2>Our Approach</h2>
-          <p>
-            At Flona, we understand the importance of forging strong
-            partnerships. As a business-to-business transactions company, we
-            work closely with wholesalers, distributors, and retailers to ensure
-            seamless access to our products. Through collaborative efforts, we
-            strive to build lasting relationships based on trust, reliability,
-            and mutual success. Get in Touch Join the Flona family today and
-            experience the difference our products can make in your home. For
-            inquiries, partnerships, or to locate a store near you, please
-            contact us at +9647503181817 or via email at flona.com@hotmail.com.
-            Thank you for choosing Flona — where quality meets cleanliness,
-            every day.
-          </p>
-          <br />
-          <br />
+    <!-- Modern About Us Section -->
+    <div class="about-modern-bg">
+      <div class="about-modern-container">
+        <h1 class="about-modern-title">About Us</h1>
+        <div class="about-modern-grid">
+          <section class="about-modern-card fade-in">
+            <div class="about-modern-icon"><i class="fa fa-history"></i></div>
+            <div class="about-modern-card-content">
+              <h2>Our Story</h2>
+              <p>Established in 2015, Flona is a pioneering force in the household cleaning product industry. With a steadfast commitment to quality and innovation, we have rapidly grown to become a trusted name in Kurdistan, Iraq, and beyond.</p>
+            </div>
+          </section>
+          <section class="about-modern-card fade-in">
+            <div class="about-modern-icon"><i class="fa fa-bullseye"></i></div>
+            <div class="about-modern-card-content">
+              <h2>Our Mission</h2>
+              <p>At Flona, we are dedicated to simplifying and enhancing the lives of our customers through superior cleaning solutions. By consistently delivering products of the highest quality, we aim to foster cleanliness, comfort, and well-being in every home we touch.</p>
+            </div>
+          </section>
+          <section class="about-modern-card fade-in">
+            <div class="about-modern-icon"><i class="fa fa-flask"></i></div>
+            <div class="about-modern-card-content">
+              <h2>Our Products</h2>
+              <p>From dishwashing detergents to laundry essentials and an array of cleaning agents, Flona offers a comprehensive range of household cleaning products designed to tackle the toughest messes with ease. Crafted with precision and care, our products are manufactured in Turkey, utilizing cutting-edge technology and the finest ingredients to ensure unparalleled performance and safety.</p>
+            </div>
+          </section>
+          <section class="about-modern-card fade-in">
+            <div class="about-modern-icon"><i class="fa fa-map-marker"></i></div>
+            <div class="about-modern-card-content">
+              <h2>Our Presence</h2>
+              <p>With our main office located in Zakho and a secondary office in Duhok, both nestled in the heart of Kurdistan, Iraq, Flona proudly serves the local community and beyond. Our commitment to excellence has enabled us to expand our reach, and today, our products can be found in stores across Kurdistan, Iraq, bringing cleanliness and freshness to homes everywhere.</p>
+            </div>
+          </section>
+          <section class="about-modern-card fade-in">
+            <div class="about-modern-icon"><i class="fa fa-handshake-o"></i></div>
+            <div class="about-modern-card-content">
+              <h2>Our Approach</h2>
+              <p>At Flona, we understand the importance of forging strong partnerships. As a business-to-business transactions company, we work closely with wholesalers, distributors, and retailers to ensure seamless access to our products. Through collaborative efforts, we strive to build lasting relationships based on trust, reliability, and mutual success. Get in Touch Join the Flona family today and experience the difference our products can make in your home. For inquiries, partnerships, or to locate a store near you, please contact us at +9647503181817 or via email at flona.com@hotmail.com. Thank you for choosing Flona — where quality meets cleanliness, every day.</p>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -135,6 +121,18 @@
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
+
+      // Fade-in animation on scroll
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.15 };
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+      faders.forEach(fader => { appearOnScroll.observe(fader); });
     </script>
   </body>
 

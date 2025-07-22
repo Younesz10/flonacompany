@@ -68,60 +68,34 @@
       </div>
     </nav>
 
-    <div class="contact">
-      <div class="contact__container">
-        <h1>Contact Us</h1>
-        <div class="contact__form">
-          <div class="contact_info">
-            <h2>Telephone & WhatsApp</h2>
-            <br />
-            <p><b>Sales:</b></p>
-            <span>+9647503181817</span>
-            <br />
-            <span>+9647502181916</span>
-            <br />
-            <br />
-            <span><b>Manager: </b></span>
-            <br />
-            <span>+9647724483008</span>
-
-            <div class="email">
+    <!-- Modern Contact Section -->
+    <div class="contact-modern-bg">
+      <div class="contact-modern-container fade-in">
+        <h1 class="contact-modern-title">Contact Us</h1>
+        <div class="contact-modern-card">
+          <div class="contact-modern-row">
+            <div class="contact-modern-icon"><i class="fa fa-phone"></i></div>
+            <div>
+              <h2>Telephone & WhatsApp</h2>
+              <div class="contact-modern-info">
+                <span><b>Sales:</b></span><br />
+                <span>+9647503181817</span><br />
+                <span>+9647502181916</span><br /><br />
+                <span><b>Manager:</b></span><br />
+                <span>+9647724483008</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-modern-row">
+            <div class="contact-modern-icon"><i class="fa fa-envelope"></i></div>
+            <div>
               <h2>Email</h2>
-              <br />
-              <span>flona.com@hotmail.com</span>
+              <div class="contact-modern-info">
+                <span>flona.com@hotmail.com</span>
+              </div>
             </div>
           </div>
         </div>
-
-        <!-- <form action="/submit_contact_form" method="post">
-            <div class="name__container">
-              <label for="firstName">First Name:</label>
-              <input type="text" id="firstName" name="firstName" required />
-
-              <label for="lastName">Last Name:</label>
-              <input type="text" id="lastName" name="lastName" required />
-            </div>
-            <label for="phone">Phone Number:</label>
-            <input type="text" id="phone" name="phone" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="company">Company:</label>
-            <input type="text" id="company" name="company" />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-            <br />
-            <input type="submit" value="Submit" />
-          </form>
-        </div>
-        <p>
-          The contact form is currently being worked on and is not yet
-          functional. In the meantime, please feel free to contact us via phone
-          or email.
-        </p> -->
-        <br />
       </div>
     </div>
 
@@ -132,6 +106,18 @@
       window.addEventListener("load", function () {
         loader.style.display = "none";
       });
+
+      // Fade-in animation on scroll
+      const faders = document.querySelectorAll('.fade-in');
+      const appearOptions = { threshold: 0.15 };
+      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('appear');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+      faders.forEach(fader => { appearOnScroll.observe(fader); });
     </script>
   </body>
 
