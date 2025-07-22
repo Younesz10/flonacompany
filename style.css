@@ -1020,11 +1020,12 @@ footer {
   padding: 0 1.5rem;
 }
 .about-modern-title {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #ff0000;
   text-align: center;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   letter-spacing: 0.5px;
 }
 .about-modern-grid {
@@ -1103,7 +1104,8 @@ footer {
     padding: 0 0.5rem;
   }
   .about-modern-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    margin-top: 1.5rem;
   }
   .about-modern-card {
     flex-direction: column;
@@ -1115,14 +1117,40 @@ footer {
   }
 }
 @media (max-width: 600px) {
+  .about-modern-container {
+    padding: 0 0.5rem;
+  }
   .about-modern-title {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
+    margin-top: 1rem;
+  }
+  .about-modern-grid {
+    gap: 2.2rem;
   }
   .about-modern-card {
     padding: 1.1rem 0.6rem 1rem 0.6rem;
+    gap: 1.2rem;
+    max-width: 98vw;
+    align-items: center;
   }
-  .about-modern-grid {
-    gap: 1.5rem;
+  .about-modern-icon {
+    font-size: 2.8rem;
+    margin-bottom: 0.7rem;
+    margin-top: 0;
+    align-self: center;
+  }
+  .about-modern-card-content {
+    align-items: center;
+    text-align: center;
+  }
+  .about-modern-card h2 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+  .about-modern-card p {
+    font-size: 0.98rem;
+    text-align: center;
   }
 }
 
@@ -1137,12 +1165,17 @@ footer {
   padding: 0 1.5rem;
 }
 .products-modern-title {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #ff0000;
   text-align: center;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   letter-spacing: 0.5px;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 .products-modern-grid {
   display: grid;
@@ -1198,7 +1231,8 @@ footer {
     gap: 1.5rem;
   }
   .products-modern-title {
-    font-size: 2rem;
+    font-size: 2.3rem;
+    margin-top: 1.5rem;
   }
 }
 @media (max-width: 600px) {
@@ -1207,7 +1241,8 @@ footer {
     gap: 1.1rem;
   }
   .products-modern-title {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
+    margin-top: 1rem;
   }
   .products-modern-container {
     padding: 0 0.5rem;
@@ -1231,11 +1266,12 @@ footer {
   padding: 0 1.5rem;
 }
 .contact-modern-title {
-  font-size: 2.7rem;
+  font-size: 3rem;
   font-weight: 700;
   color: #ff0000;
   text-align: center;
   margin-bottom: 2.5rem;
+  margin-top: 2.5rem;
   letter-spacing: 0.5px;
   background: none;
   border-radius: 0;
@@ -1243,51 +1279,50 @@ footer {
   box-shadow: none;
 }
 .contact-modern-card {
-  background: #fff;
-  border-radius: 22px;
-  border: 1.5px solid #e6eaf3;
-  box-shadow: 0 4px 24px 0 rgba(30, 42, 90, 0.10);
-  padding: 2.2rem 2rem 1.5rem 2rem;
+  background: linear-gradient(135deg, #fafdff 60%, #e9f0fb 100%);
+  border-radius: 28px;
+  border: 2px solid #dbeafe;
+  box-shadow: 0 8px 32px 0 rgba(30, 42, 90, 0.13);
+  padding: 2.5rem 2.2rem 2rem 2.2rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.7rem;
   opacity: 1;
   transform: none;
   transition: transform 0.22s cubic-bezier(.4,0,.2,1), box-shadow 0.22s cubic-bezier(.4,0,.2,1), opacity 0.7s cubic-bezier(.4,0,.2,1);
 }
 .contact-modern-card:hover {
-  box-shadow: 0 12px 36px 0 rgba(30, 42, 90, 0.16);
-  transform: scale(1.025);
+  box-shadow: 0 16px 48px 0 rgba(30, 42, 90, 0.18);
+  transform: scale(1.03);
 }
 .contact-modern-row {
   display: flex;
   align-items: flex-start;
-  gap: 1.2rem;
+  gap: 1.7rem;
   position: relative;
+  margin-bottom: 0.7rem;
 }
-.contact-modern-row + .contact-modern-row::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -1.1rem;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background: linear-gradient(90deg, #e6eaf3 0%, #fff 100%);
+.contact-modern-row:last-child {
+  margin-bottom: 0;
 }
 .contact-modern-icon {
-  font-size: 2.4rem;
+  font-size: 2.7rem;
   color: #2563eb;
   background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
   border-radius: 50%;
-  padding: 0.7em 0.9em;
-  box-shadow: 0 2px 8px 0 rgba(30, 42, 90, 0.09);
+  padding: 0.8em 1em;
+  box-shadow: 0 4px 16px 0 rgba(30, 42, 90, 0.13);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 0.2em;
   flex-shrink: 0;
-  transition: color 0.3s, background 0.3s;
+  transition: color 0.3s, background 0.3s, box-shadow 0.3s;
+}
+.contact-modern-card:hover .contact-modern-icon {
+  color: #1d4ed8;
+  background: linear-gradient(135deg, #dbeafe 0%, #f0fdfa 100%);
+  box-shadow: 0 8px 24px 0 rgba(30, 42, 90, 0.18);
 }
 .contact-modern-card h2 {
   font-size: 1.1rem;
@@ -1303,25 +1338,104 @@ footer {
   line-height: 1.7;
   font-weight: 400;
 }
+.contact-modern-desc {
+  text-align: center;
+  font-size: 1.13rem;
+  color: #3a4256;
+  margin-bottom: 1.7rem;
+  margin-top: -1.1rem;
+  font-weight: 400;
+}
 @media (max-width: 600px) {
   .contact-modern-container {
     padding: 0 0.5rem;
   }
   .contact-modern-title {
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     padding: 0.7rem 0 0.7rem 0;
   }
   .contact-modern-card {
-    padding: 1.1rem 0.7rem 1rem 0.7rem;
-    gap: 1.2rem;
+    padding: 1.2rem 0.7rem 1rem 0.7rem;
+    gap: 1.5rem;
   }
   .contact-modern-row {
     flex-direction: column;
-    gap: 0.7rem;
+    gap: 0.9rem;
+    margin-bottom: 0.5rem;
   }
   .contact-modern-icon {
     margin-bottom: 0.5rem;
-    font-size: 2rem;
+    font-size: 2.2rem;
     padding: 0.6em 0.7em;
+  }
+}
+
+.contact-pill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 2rem 2.2rem 2rem;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px 0 rgba(30, 42, 90, 0.13);
+  background: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  gap: 0.7rem;
+}
+.contact-pill-label {
+  font-weight: 700;
+  color: #1a2340;
+  font-size: 1.18rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+  margin-top: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+.contact-pill-label i {
+  font-size: 1.1em;
+  color: #2563eb;
+  margin-right: 0.3em;
+}
+.contact-pill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.contact-pill-item {
+  background: #e9f0fb;
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 1.08rem;
+  border-radius: 999px;
+  padding: 0.55em 1.5em;
+  margin: 0.15em 0;
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(30, 42, 90, 0.07);
+  transition: background 0.2s, color 0.2s;
+}
+.contact-pill-item:hover {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+@media (max-width: 900px) {
+  .contact-pill-card {
+    max-width: 98vw;
+  }
+}
+
+@media (min-width: 961px) {
+  .main__content .image-container img {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+  }
+  .products__content .image-container img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
   }
 }
