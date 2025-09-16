@@ -4,8 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homepage</title>
+    <title>Flona Company - Premium Household Cleaning Products | Kurdistan, Iraq</title>
     <link rel="icon" type="image/png" href="/images/flona_favicon1.png" />
+    <meta name="description" content="Flona Company offers premium household cleaning products including dishwashing liquid, laundry detergent, and surface cleaners. Trusted brand in Kurdistan, Iraq since 2015. Call +9647503181817." />
+    <meta name="keywords" content="Flona, household cleaning products, dishwashing liquid, laundry detergent, surface cleaner, Kurdistan, Iraq, Zakho, Duhok, cleaning products" />
+    <meta name="author" content="Flona Company" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://flonacompany.com/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://flonacompany.com/" />
+    <meta property="og:title" content="Flona Company - Premium Household Cleaning Products" />
+    <meta property="og:description" content="Premium quality household cleaning products including dishwashing liquid, laundry detergent, and surface cleaners. Trusted brand in Kurdistan, Iraq since 2015." />
+    <meta property="og:image" content="https://flonacompany.com/images/flona_products.png" />
+    <meta property="og:site_name" content="Flona Company" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://flonacompany.com/" />
+    <meta property="twitter:title" content="Flona Company - Premium Household Cleaning Products" />
+    <meta property="twitter:description" content="Premium quality household cleaning products including dishwashing liquid, laundry detergent, and surface cleaners. Trusted brand in Kurdistan, Iraq since 2015." />
+    <meta property="twitter:image" content="https://flonacompany.com/images/flona_products.png" />
     <link rel="stylesheet" href="style.css" />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -20,11 +40,72 @@
       href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    
+    <!-- Performance optimizations -->
+    <link rel="dns-prefetch" href="//kit.fontawesome.com" />
+    <link rel="preload" href="images/flonalogo.png" as="image" />
+    <link rel="preload" href="images/Untitled design.png" as="image" />
+    <meta name="theme-color" content="#ffffff" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Flona Company",
+      "url": "https://flonacompany.com",
+      "logo": "https://flonacompany.com/images/flonalogo.png",
+      "description": "Premium household cleaning products manufacturer serving Kurdistan, Iraq since 2015",
+      "foundingDate": "2015",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Zakho",
+          "addressRegion": "Kurdistan",
+          "addressCountry": "Iraq"
+        },
+        {
+          "@type": "PostalAddress", 
+          "addressLocality": "Duhok",
+          "addressRegion": "Kurdistan",
+          "addressCountry": "Iraq"
+        }
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+9647503181817",
+          "contactType": "customer service",
+          "availableLanguage": ["Kurdish", "Arabic", "English"]
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+9647502181916", 
+          "contactType": "customer service",
+          "availableLanguage": ["Kurdish", "Arabic", "English"]
+        }
+      ],
+      "email": "flona.com@hotmail.com",
+      "sameAs": [
+        "https://www.facebook.com/flonaoffice/",
+        "https://www.instagram.com/flonacompany/"
+      ],
+      "makesOffer": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "Household Cleaning Products",
+          "description": "Premium quality dishwashing liquid, laundry detergent, hand wash, and surface cleaners"
+        }
+      }
+    }
+    </script>
   </head>
 
   <body>
     <div id="preloader"></div>
 
+    <div class="main-content">
     <!-- navbar section -->
     <div class="announcement-bar">
       <p>Need Help? Call Us <a href="tel:+9647503181817">+9647503181817</a></p>
@@ -81,7 +162,7 @@
             <a href="/products.html" class="main__button">DISCOVER NOW</a>
           </div>
           <div class="image-container">
-            <img src="images/Untitled design.png" alt="Flona products" />
+            <img src="images/Untitled design.png" alt="Flona premium household cleaning products including dishwashing liquid, laundry detergent, and surface cleaners" loading="lazy" />
           </div>
         </div>
       </div>
@@ -102,7 +183,7 @@
             <a href="/products.html" class="products__button"> LEARN MORE </a>
           </div>
           <div class="image-container">
-            <img src="images/flona_original.png" alt="Flona original" />
+            <img src="images/flona_original.png" alt="Flona Original dishwashing liquid soap with 2X grease cleaning power" loading="lazy" />
           </div>
         </div>
       </div>
@@ -122,10 +203,19 @@
               <li>Convenient and reliable</li>
             </ul>
           </div>
-          <img src="images/flona_products.png" alt="Flona" />
+          <img src="images/flona_products.png" alt="Flona complete range of household cleaning products trusted in Kurdistan Iraq" loading="lazy" />
         </div>
       </div>
     </div>
+    <!-- Floating WhatsApp Button -->
+    <div class="whatsapp-float">
+      <a href="https://wa.me/9647503181817?text=Hello%20Flona%20Company,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+         target="_blank" class="whatsapp-float-btn">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+    </div>
+
     <script src="app.js"></script>
     <script>
       var loader = document.getElementById("preloader");
@@ -134,28 +224,29 @@
         loader.style.display = "none";
       });
     </script>
-  </body>
 
-  <footer>
-    <div class="socials">
-      <div class="socials_container">
-        <p>FOLLOW US</p>
-        <div class="socials_content">
-          <a
-            href="https://www.facebook.com/flonaoffice/"
-            alt="Flona Facebook"
-            target="_blank"
-            ><img src="/images/facebook_icon.png" alt="facebook"
-          /></a>
-          <a
-            href="https://www.instagram.com/flonacompany/"
-            alt="Flona instagram"
-            target="_blank"
-            ><img src="/images/instagram_icon.png" alt="instagram"
-          /></a>
+    <footer>
+      <div class="socials">
+        <div class="socials_container">
+          <p>FOLLOW US</p>
+          <div class="socials_content">
+            <a
+              href="https://www.facebook.com/flonaoffice/"
+              alt="Flona Facebook"
+              target="_blank"
+              ><img src="/images/facebook_icon.png" alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/flonacompany/"
+              alt="Flona instagram"
+              target="_blank"
+              ><img src="/images/instagram_icon.png" alt="instagram"
+            /></a>
+          </div>
         </div>
       </div>
-    </div>
-    <p>&copy; 2024 Flona Company. All rights reserved.</p>
-  </footer>
+      <p>&copy; 2026 Flona Company. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
+

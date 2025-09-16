@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lan="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="icon" type="image/png" href="/images/flona_favicon1.png" />
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Flona Company</title>
+    <meta name="description" content="Get in touch with Flona Company for premium household cleaning products. Contact us for inquiries, wholesale partnerships, and product information.">
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <script src="js/bootstrap.bundle.js"></script>
     <script
@@ -18,120 +15,201 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-
-  <body>
-    <div id="preloader"></div>
-
-    <!-- navbar section -->
-    <div class="announcement-bar">
-      <p>Need Help? Call Us <a href="tel:+9647503181817">+9647503181817</a></p>
-    </div>
-    <nav class="navbar">
-      <div class="navbar__container">
-        <a href="/" id="navbar__logo"
-          ><img src="images/flonalogo.png" alt="Flona company"
-        /></a>
-        <ul class="call-button2">
-          <li>
-            <a href="tel:+9647503181817" class="fa fa-phone">
-              <b>CALL NOW</b>
-            </a>
-          </li>
-        </ul>
-
-        <div class="navbar__toggle" id="mobile-menu">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
+</head>
+<body>
+    <div class="main-content">
+        <!-- navbar section -->
+        <div class="announcement-bar">
+          <p>Need Help? Call Us <a href="tel:+9647503181817">+9647503181817</a></p>
         </div>
-        <ul class="navbar__menu">
-          <li class="navbar__item">
-            <a href="/" class="navbar__links">HOME</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/about.html" class="navbar__links">ABOUT US</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/products.html" class="navbar__links">PRODUCTS</a>
-          </li>
-          <li class="navbar__item">
-            <a href="/contact.html" class="navbar__links">CONTACT</a>
-          </li>
-          <li class="call-button">
-            <a href="tel:+9647503181817">CALL NOW</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+        <nav class="navbar">
+          <div class="navbar__container">
+            <a href="/" id="navbar__logo"
+              ><img src="images/flonalogo.png" alt="Flona company"
+            /></a>
+            <ul class="call-button2">
+              <li>
+                <a href="tel:+9647503181817" class="fa fa-phone">
+                  CALL NOW
+                </a>
+              </li>
+            </ul>
 
-    <!-- Modern Contact Section -->
-    <div class="contact-modern-bg">
-      <div class="contact-modern-container fade-in">
-        <h1 class="contact-modern-title">Contact Details</h1>
-        <div class="contact-modern-card contact-pill-card">
-          <div class="contact-pill-label"><i class="fa fa-phone"></i> Telephone &amp; WhatsApp:</div>
-          <div class="contact-pill-list">
-            <a href="tel:+9647503181817" class="contact-pill-item">+9647503181817</a>
-            <a href="tel:+9647502181916" class="contact-pill-item">+9647502181916</a>
+            <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+
+            <ul class="navbar__menu">
+              <li class="navbar__item">
+                <a href="/" class="navbar__links">HOME</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/about.html" class="navbar__links">ABOUT US</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/products.html" class="navbar__links">PRODUCTS</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/contact.html" class="navbar__links active">CONTACT</a>
+              </li>
+              <li class="call-button">
+                <a href="tel:+9647503181817" class="fa fa-phone">
+                  CALL NOW
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="contact-pill-label" style="margin-top:1.5rem;"><i class="fa fa-user-tie"></i> Manager:</div>
-          <div class="contact-pill-list">
-            <a href="tel:+9647724483008" class="contact-pill-item">+9647724483008</a>
-          </div>
-          <div class="contact-pill-label" style="margin-top:1.5rem;"><i class="fa fa-envelope"></i> Email:</div>
-          <div class="contact-pill-list">
-            <div class="contact-pill-item">flona.com@hotmail.com</div>
+        </nav>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch with us for any inquiries about our premium cleaning products</p>
+                
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form">
+                        <h2>Send us a Message</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Name *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Get in Touch</h2>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p><a href="tel:+9647503181817">+964 750 318 1817</a></p>
+                                <p><a href="tel:+9647502181916">+964 750 218 1916</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@flonacompany.com">info@flonacompany.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>Kurdistan Region, Iraq</p>
+                            </div>
+                        </div>
+                        
+                        <a href="https://wa.me/9647503181817" class="whatsapp-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+      <div class="socials">
+        <div class="socials_container">
+          <p>FOLLOW US</p>
+          <div class="socials_content">
+            <a
+              href="https://www.facebook.com/flonaoffice/"
+              alt="Flona Facebook"
+              target="_blank"
+              ><img src="/images/facebook_icon.png" alt="facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/flonacompany/"
+              alt="Flona instagram"
+              target="_blank"
+              ><img src="/images/instagram_icon.png" alt="instagram"
+            /></a>
           </div>
         </div>
       </div>
-    </div>
+      <p>&copy; 2026 Flona Company. All rights reserved.</p>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/9647503181817?text=Hello%20Flona%20Company,%20I%20would%20like%20to%20inquire%20about%20your%20products" 
+       target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="app.js"></script>
     <script>
-      var loader = document.getElementById("preloader");
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Create WhatsApp message
+            const whatsappMessage = `Hello Flona Company,
 
-      window.addEventListener("load", function () {
-        loader.style.display = "none";
-      });
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'Not provided'}
+Subject: ${subject}
 
-      // Fade-in animation on scroll
-      const faders = document.querySelectorAll('.fade-in');
-      const appearOptions = { threshold: 0.15 };
-      const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('appear');
-          observer.unobserve(entry.target);
+Message:
+${message}
+
+Thank you!`;
+            
+            // Open WhatsApp with pre-filled message
+            const whatsappUrl = `https://wa.me/9647503181817?text=${encodeURIComponent(whatsappMessage)}`;
+            window.open(whatsappUrl, '_blank');
+            
+            // Reset form
+            this.reset();
+            
+            // Show success message
+            alert('Thank you! Your message has been sent via WhatsApp.');
         });
-      }, appearOptions);
-      faders.forEach(fader => { appearOnScroll.observe(fader); });
     </script>
-  </body>
-
-  <footer>
-    <div class="socials">
-      <div class="socials_container">
-        <p>FOLLOW US</p>
-        <div class="socials_content">
-          <a
-            href="https://www.facebook.com/flonaoffice/"
-            alt="Flona Facebook"
-            target="_blank"
-            ><img src="/images/facebook_icon.png" alt="facebook"
-          /></a>
-          <a
-            href="https://www.instagram.com/flonacompany/"
-            alt="Flona instagram"
-            target="_blank"
-            ><img src="/images/instagram_icon.png" alt="instagram"
-          /></a>
-        </div>
-      </div>
-    </div>
-    <p>&copy; 2024 Flona Company. All rights reserved.</p>
-  </footer>
+</body>
 </html>

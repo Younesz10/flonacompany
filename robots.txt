@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://flonacompany.com/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Allow all search engines to crawl all content
+# No disallow rules as we want all pages to be indexed
+
+# Block access to admin or sensitive areas (if any exist in future)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow access to CSS and JS files for proper rendering
+Allow: /style.css
+Allow: /app.js
+Allow: /images/
+Allow: /Flona-Products-Catalog/
+Allow: /gifs/
+Allow: /css/
+Allow: /js/
