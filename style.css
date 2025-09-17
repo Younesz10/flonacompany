@@ -176,48 +176,63 @@ p {
   }
 
   .navbar__menu {
-    display: grid;
-    grid-template-columns: auto;
-    margin: 15px;
-    width: 92%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
     position: absolute;
     top: -1000px;
     opacity: 0;
-    background: #131313;
-    transition: all 0.5s ease;
-    height: 60vh;
+    background: white;
+    transition: all 0.3s ease;
+    height: auto;
     z-index: -1;
-    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
+    padding: 20px 0;
   }
 
   .navbar__menu.active {
     background: white;
     top: 100%;
     opacity: 1;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     z-index: 99;
-    height: 40vh;
+    height: auto;
     font-size: 1rem;
   }
 
   .navbar__toggle {
     z-index: 999;
+    margin-left: 20px;
   }
   .navbar__toggle .bar {
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
     background: red;
+    border-radius: 2px;
   }
   .navbar__item {
     width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .navbar__item:last-child {
+    border-bottom: none;
   }
   .navbar__links {
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     width: 100%;
-    display: table;
+    display: block;
+    color: #333;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  .navbar__links:hover {
+    background: #f8f9fa;
+    color: #ff0000;
   }
 
   #mobile-menu {
@@ -259,6 +274,7 @@ p {
     height: auto;
     display: flex;
     margin-left: 160px;
+    margin-right: 40px;
   }
 }
 
